@@ -28,7 +28,7 @@ try {
 
 try {
     const info = await transporter.sendMail({
-        from: 'swamihimanshu087@gmail.com',
+        from: process.env.user,
         bcc: 'swamihimanshu78@gmail.com, iotaxerror@gmail.com',
         subject: "This is a test mail",
         text: "Hello from express",
